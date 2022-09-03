@@ -63,11 +63,9 @@ class _HomePageState extends State<HomePage> {
     }
 
     if (state.status == WeatherStatus.loading) {
-      if (state.status == WeatherStatus.loading) {
-        return const Center(
-          child: CircularProgressIndicator(),
-        );
-      }
+      return const Center(
+        child: CircularProgressIndicator(),
+      );
     }
 
     if (state.status == WeatherStatus.error && state.weather.name == '') {
